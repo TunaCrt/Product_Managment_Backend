@@ -11,6 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
 public class ProductController {
+    /*(@Autowired)Bu anotasyon, bağımlılık enjeksiyonunu sağlar. ProductService sınıfına bağımlıdır.
+    public ProductController(ProductService productService) {this.productService = productService; }
+    bu kod satırlarının görevini sağlar
+    */
     @Autowired
     private ProductService productService;
 
