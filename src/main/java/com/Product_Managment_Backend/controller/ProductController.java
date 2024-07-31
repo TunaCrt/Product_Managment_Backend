@@ -15,6 +15,7 @@ public class ProductController {
     public ProductController(ProductService productService) {this.productService = productService; }
     bu kod satırlarının görevini sağlar
     */
+    
     @Autowired
     private ProductService productService;
 
